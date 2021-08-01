@@ -1,0 +1,198 @@
+/* ============================ Global styles ============================ */
+:root{
+    --white: #ffffff;
+    --pink: #ca3650;
+    --blue: #1b5f64;
+    --yellow: #eac720;
+    --btnColor: #eac82080;
+    --mont: 'Montserrat', sans-serif;
+    --vogue:  'Vogue', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+textarea:focus, input:focus{
+    font-family: var(--mont);
+    outline: none;
+}
+
+body{
+    background: linear-gradient(to right, var(--blue), var(--pink));
+    color: var(--white);
+    font-family: var(--mont);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.btn{
+    padding: 0.3rem 0.5rem;
+    background-color: var(--btnColor);
+    border-radius: 0.3rem;
+    width: max-content;
+}
+
+.active{
+    color: var(--yellow);
+}
+
+/* ============================ Header & Navigation ============================ */
+
+header{
+    height: 100vh;
+    width: 100vw;
+}
+
+header::before{
+    position: absolute;
+    content: "";
+    background-image: url('../images/background.jpeg');
+    opacity: 0.15;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: auto;
+    height: 5rem;
+}
+
+.logo h1{
+    font-size: 2rem;
+    font-family: var(--vogue);
+}
+
+nav{
+    width: max-content;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    margin-left: 5vw;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+.navItems{
+    margin: 0rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.navItems:hover{
+    transition: color 0.4s ease-in-out;
+    color: var(--yellow);
+}
+
+/* ========================== SLider ======================== */
+.carousel{
+    padding: 0rem 5rem;
+    top:0;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+#rightSlide, #leftSlide{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.carouselCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0rem 1rem;
+    width: 100vw;
+}
+
+.carouselInner{
+    /* width: 100vw; */
+    overflow-x: hidden;
+    display: flex;
+    
+}
+
+.carouselCard p{
+    width: 20rem;
+    margin: 1rem 0rem;
+}
+
+/* ==================================== Footer ================================ */
+
+footer{
+    font-size: 0.5rem;
+    border-bottom: 4rem solid var(--yellow);
+    padding: 3rem 0rem 1rem 0rem;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+footer h4{
+    font-size: 0.8rem;
+    color: var(--yellow);
+}
+
+footer>div{
+    margin: 0rem 5rem;
+}
+
+footer>div>p{
+    width: 10rem;
+    text-align: justify;
+    line-height: 1rem;
+}
+
+.socialHandles a img{
+    width: 2rem;
+    margin-top: 1rem;
+}
+
+.usefulLinks, .twitterHandle{
+    margin-top: 2rem;
+}
+
+.usefulLinks ul li{
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+.twitterHandle h4{
+    margin-bottom: 1rem;
+}
+
+.twitterHandle>p{
+    border-bottom: 0.1rem solid var(--yellow);
+    padding: 0.2rem 0rem;
+}
+
+.twitterHandle>p>span{
+    display: block;
+    font-weight: bold;
+    margin-top: 0.3rem;
+}

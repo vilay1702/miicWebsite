@@ -1,0 +1,197 @@
+.highlightPara{
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+.containerM{
+    height: 35rem;
+    width: 100vw;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sideContentLeft, .sideContentRight{
+    color: var(--pink);
+    font-family: var(--vogue);
+    font-size: 4rem;
+    opacity: 0.4;
+}
+
+.sideContentLeft{
+    transform: rotate(90deg) translate(10rem, 3rem);
+}
+
+.sideContentRight{
+    transform: rotate(-90deg) translate(10rem, 4.5rem);
+}
+
+.containerL {
+    background-color: var(--white);
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerL div{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgContainer{
+    align-items: flex-end;
+}
+
+.imgContainer h2{
+    color: var(--pink);
+    margin: 0rem 0.2rem;
+}
+
+.imgContainer img{
+    width: 25rem;
+    height: 25rem;
+}
+
+.cardContainer{
+    width: 28rem !important;
+    text-align: justify;
+    z-index: 10;
+    background-color: var(--pink);
+    height: 37rem;
+    padding: 2rem;
+}
+
+.cardContainer p{
+    margin: 1rem 0rem;
+}
+
+.imgContainerReverse{
+    align-items: flex-start;
+    order: 2 !important;
+}
+
+.imgContainerReverse h2{
+    color: var(--blue);
+}
+
+.cardContainerReverse{
+    background-color: var(--blue);
+    align-items: flex-end;
+}
+
+.partner{
+    height: 18rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0rem;
+}
+
+.partner div{
+    width: 30rem;
+}
+
+.brands{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.brands img{
+    width: 5rem;
+    height: 5rem;
+    padding: 0.5rem;
+}
+
+.partnerInfo{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2rem;
+}
+
+.partnerInfo h2{
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    min-height: 45rem;
+    padding: 1rem 0rem;
+}
+
+.news h1{
+    color: var(--yellow);
+}
+
+.news p{
+    /* margin: 1rem 0rem; */
+    width: 40rem;
+}
+
+.news>div{
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* margin: 1rem 0rem; */
+    gap: 1rem;
+}
+
+.newsCard{
+    height: 15vw;
+    background-color: var(--white);
+}
+
+.newsCard>img{
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 15% 95%, 10% 100%, 0 100%);
+    height: 11vw;
+}
+
+.newsCard>div{
+    height: 4vw;
+    overflow-y: hidden;
+    color: var(--pink);
+}
+
+#inquiryForm{
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--pink);
+} 
+
+.inquiry h2{
+    margin-bottom: 1rem;
+}
+
+#inquiryForm label{
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: 800;
+}
+
+#inquiryForm input, #inquiryForm textarea{
+    padding: 0.5rem 0.2rem;
+    border: 0.08rem solid var(--blue);
+    border-radius: 0.3rem;
+    width: 25em;
+}
+
+#submitInquiry{
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border: 0rem solid transparent;
+}
